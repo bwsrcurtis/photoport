@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Maryland Photography</h1>
+        <h1>Curtis Bowser | Maryland Photography</h1>
         <ActionAreaCard />
       </header>
     </div>
