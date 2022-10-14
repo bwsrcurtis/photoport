@@ -5,23 +5,19 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-export default function ActionAreaCard() {
+export default function ActionAreaCard(image) {
   return (
-    <Card sx={{ maxWidth: 750 }}>
+    <Card sx={{ maxWidth: 444.5 }}>
       <CardActionArea>
         <CardMedia
           component="img"
-          height="500"
+          height="250"
           image={require("../static/images/cards/20210805_080304.jpg")}
           alt="forest"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Forest
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          Clearwater Park in Annapolis, MD
           </Typography>
         </CardContent>
       </CardActionArea>

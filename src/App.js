@@ -6,15 +6,14 @@ import '@fontsource/roboto/700.css';
 import React from 'react';
 
 import './App.css';
-import BasicRating from './components/starRating';
 import ActionAreaCard from './components/card';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Maryland Photography</h1>
         <ActionAreaCard />
-        <BasicRating />
       </header>
     </div>
   );
