@@ -6,15 +6,16 @@ import '@fontsource/roboto/700.css';
 import React from 'react';
 
 import './App.css';
-import ActionAreaCard from './components/card';
+import MasonryImageList from './components/imageList';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Curtis Bowser | Maryland Photography</h1>
-        <ActionAreaCard />
+        <h5 className="title">Curtis Bowser<br />
+        Maryland Photography</h5>
       </header>
+        <MasonryImageList />
     </div>
   );
 }
