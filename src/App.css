@@ -12,10 +12,11 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: sticky;
 }
 
 .title {
-  margin: .15rem .25rem;
+  margin: 1rem .25rem;
   font-size: 1rem;
 }
 

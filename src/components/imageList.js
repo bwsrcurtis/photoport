@@ -5,14 +5,14 @@ import ImageListItem from '@mui/material/ImageListItem';
 
 export default function MasonryImageList() {
   return (
-    <Box sx={{ width: 9/10, height: 1100, overflowY: 'overflow' }}>
-      <ImageList className="imagebox" variant="masonry" cols={4} gap={3}>
+    <Box sx={{ width: 19/20, height: 1100, overflowY: 'overflow' }}>
+      <ImageList className="imagebox" variant="masonry" cols={5} gap={3}>
         {itemData.map((item) => (
           <ImageListItem key={item.imgdirect}>
             <img
               src={`${item.imgdirect}?w=248&fit=crop&auto=format`}
               srcSet={`${item.imgdirect}direct?w=248&fit=crop&auto=format&dpr=2 2x`}
-              alt={item.title}
+              alt={item.title + ' ' + item.author}
               loading="lazy"
             />
           </ImageListItem>
