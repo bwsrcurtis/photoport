@@ -9,18 +9,24 @@
   background-color: #1d2129;
   display: inline;
   align-items: center;
+  text-align: left;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 
 }
 
-.title {
+h5 {
   margin: 1rem .25rem;
-  font-size: 1.5rem;
-  text-align: left;
+  font-size: 1.25rem;
   position: sticky;
   top: 0;
+  font-weight: 100;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .imagebox {

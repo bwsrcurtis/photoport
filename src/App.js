@@ -12,8 +12,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h5 className="title">Curtis Bowser<br /><br />
-        Maryland Photography</h5>
+        <h5 className="title">Curtis Bowser</h5><br />
+        <h5>Maryland Photography</h5>
       </header>
         <MasonryImageList />
     </div>
