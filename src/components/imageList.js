@@ -30,15 +30,15 @@ const itemData = [
     author: 'Curtis Bowser',
   },
   {
-    imgdirect: 'https://i.imgur.com/J2hSZa5.jpg',
-    redbubblelink: 'https://www.redbubble.com/shop/ap/128552248',
-    title: 'Patapsco Pareidolia',
-    author: 'Curtis Bowser',
-  },
-  {
     imgdirect: 'https://i.imgur.com/ICFGyOn.jpg',
     redbubblelink: 'https://www.redbubble.com/shop/ap/128552048',
     title: 'Patapsco State Park',
+    author: 'Curtis Bowser',
+  },
+  {
+    imgdirect: 'https://i.imgur.com/TIsD8ml.jpg',
+    redbubblelink: 'https://www.redbubble.com/shop/ap/128551814',
+    title: 'Lake Waterford',
     author: 'Curtis Bowser',
   },
   {
@@ -48,44 +48,33 @@ const itemData = [
     author: 'Curtis Bowser',
   },
   {
-    imgdirect: 'https://i.imgur.com/TIsD8ml.jpg',
-    redbubblelink: 'https://www.redbubble.com/shop/ap/128551814',
-    title: 'Lake Waterford',
+    imgdirect: "https://i.imgur.com/RDbCX0f.jpg",
+    redbubblelink: 'https://www.redbubble.com/shop/ap/128570337',
+    title: 'Green House',
     author: 'Curtis Bowser',
   },
-  // {
-  //   imgdirect: "https://i.imgur.com/RDbCX0f.jpg",
-  //   title: 'Green House',
-  //   author: 'Curtis Bowser',
-  // },
-  // {
-  //   imgdirect: 'https://i.imgur.com/1tCVQT2.jpg',
-  //   title: 'Streetlight',
-  //   author: 'Curtis Bowser',
-  // },
-  // {
-  //   imgdirect: 'https://i.imgur.com/hqcdMPm.jpg',
-  //   title: 'Annapolis MD Flag',
-  //   author: 'Curtis Bowser',
-  // },
-  // {
-  //   imgdirect: 'https://i.imgur.com/3GP7w63.jpg',
-  //   title: 'Swallow Falls',
-  //   author: 'Curtis Bowser',
-  // },
-  // {
-  //   imgdirect: 'https://i.imgur.com/a4jj0pw.jpg',
-  //   title: 'Park at Sunset Sepia',
-  //   author: 'Curtis Bowser',
-  // },
-  // {
-  //   imgdirect: 'https://i.imgur.com/hj4P0xs.jpg',
-  //   title: 'Graffiti Patapsco',
-  //   author: 'Curtis Bowser',
-  // },
-  // {
-  //   imgdirect: 'https://i.imgur.com/4QSfQGy.jpg',
-  //   title: 'Smithsonian Butterfly',
-  //   author: 'Curtis Bowser',
-  // },
+  {
+    imgdirect: 'https://i.imgur.com/J2hSZa5.jpg',
+    redbubblelink: 'https://www.redbubble.com/shop/ap/128552248',
+    title: 'Patapsco Pareidolia',
+    author: 'Curtis Bowser',
+  },
+  {
+    imgdirect: 'https://i.imgur.com/a4jj0pw.jpg',
+    redbubblelink: 'https://www.redbubble.com/shop/ap/128570656',
+    title: 'Park at Sunset Sepia',
+    author: 'Curtis Bowser',
+  },
+  {
+    imgdirect: 'https://i.imgur.com/1tCVQT2.jpg',
+    redbubblelink: 'https://www.redbubble.com/shop/ap/128570437',
+    title: 'Streetlight',
+    author: 'Curtis Bowser',
+  },
+  {
+    imgdirect: 'https://i.imgur.com/3GP7w63.jpg',
+    redbubblelink:'https://www.redbubble.com/shop/ap/128570546',
+    title: 'Swallow Falls',
+    author: 'Curtis Bowser',
+  },
 ];
