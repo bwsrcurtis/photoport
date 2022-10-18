@@ -6,7 +6,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 export default function MasonryImageList() {
   return (
     <Box sx={{ width: 19/20, height: 935, overflowY: 'auto' }}>
-      <ImageList className="imagebox" variant="masonry" cols={3} gap={8}>
+      <ImageList className="imagebox" variant="masonry" cols={2} gap={8}>
         {itemData.map((item) => (
           <ImageListItem key={item.imgdirect}>
             <img className="img"
@@ -24,53 +24,8 @@ export default function MasonryImageList() {
 
 const itemData = [
   {
-    imgdirect: "https://i.imgur.com/RDbCX0f.jpg",
-    title: 'Green House',
-    author: 'Curtis Bowser',
-  },
-  {
-    imgdirect: 'https://i.imgur.com/1tCVQT2.jpg',
-    title: 'Streetlight',
-    author: 'Curtis Bowser',
-  },
-  {
-    imgdirect: 'https://i.imgur.com/hqcdMPm.jpg',
-    title: 'Annapolis MD Flag',
-    author: 'Curtis Bowser',
-  },
-  {
-    imgdirect: 'https://i.imgur.com/ICFGyOn.jpg',
-    title: 'Patapsco Bridge',
-    author: 'Curtis Bowser',
-  },
-  {
-    imgdirect: 'https://i.imgur.com/3GP7w63.jpg',
-    title: 'Swallow Falls',
-    author: 'Curtis Bowser',
-  },
-  {
-    imgdirect: 'https://i.imgur.com/a4jj0pw.jpg',
-    title: 'Park at Sunset Sepia',
-    author: 'Curtis Bowser',
-  },
-  {
     imgdirect: 'https://i.imgur.com/hTyw5Nb.jpg',
-    title: 'Park at Sunset',
-    author: 'Curtis Bowser',
-  },
-  {
-    imgdirect: 'https://i.imgur.com/hj4P0xs.jpg',
-    title: 'Graffiti Patapsco',
-    author: 'Curtis Bowser',
-  },
-  {
-    imgdirect: 'https://i.imgur.com/TIsD8ml.jpg',
-    title: 'Lake Waterford',
-    author: 'Curtis Bowser',
-  },
-  {
-    imgdirect: 'https://i.imgur.com/IHcZkiZ.jpg',
-    title: 'Clearwater Park',
+    title: 'Albertson Road Trail Sunset',
     author: 'Curtis Bowser',
   },
   {
@@ -79,8 +34,53 @@ const itemData = [
     author: 'Curtis Bowser',
   },
   {
-    imgdirect: 'https://i.imgur.com/4QSfQGy.jpg',
-    title: 'Smithsonian Butterfly',
+    imgdirect: 'https://i.imgur.com/ICFGyOn.jpg',
+    title: 'Patapsco State Park',
     author: 'Curtis Bowser',
   },
+  {
+    imgdirect: 'https://i.imgur.com/IHcZkiZ.jpg',
+    title: 'Clearwater Park',
+    author: 'Curtis Bowser',
+  },
+  {
+    imgdirect: 'https://i.imgur.com/TIsD8ml.jpg',
+    title: 'Lake Waterford',
+    author: 'Curtis Bowser',
+  },
+  // {
+  //   imgdirect: "https://i.imgur.com/RDbCX0f.jpg",
+  //   title: 'Green House',
+  //   author: 'Curtis Bowser',
+  // },
+  // {
+  //   imgdirect: 'https://i.imgur.com/1tCVQT2.jpg',
+  //   title: 'Streetlight',
+  //   author: 'Curtis Bowser',
+  // },
+  // {
+  //   imgdirect: 'https://i.imgur.com/hqcdMPm.jpg',
+  //   title: 'Annapolis MD Flag',
+  //   author: 'Curtis Bowser',
+  // },
+  // {
+  //   imgdirect: 'https://i.imgur.com/3GP7w63.jpg',
+  //   title: 'Swallow Falls',
+  //   author: 'Curtis Bowser',
+  // },
+  // {
+  //   imgdirect: 'https://i.imgur.com/a4jj0pw.jpg',
+  //   title: 'Park at Sunset Sepia',
+  //   author: 'Curtis Bowser',
+  // },
+  // {
+  //   imgdirect: 'https://i.imgur.com/hj4P0xs.jpg',
+  //   title: 'Graffiti Patapsco',
+  //   author: 'Curtis Bowser',
+  // },
+  // {
+  //   imgdirect: 'https://i.imgur.com/4QSfQGy.jpg',
+  //   title: 'Smithsonian Butterfly',
+  //   author: 'Curtis Bowser',
+  // },
 ];

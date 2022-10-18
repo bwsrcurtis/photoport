@@ -5,6 +5,7 @@ import '@fontsource/roboto/700.css';
 
 import React from 'react';
 
+import maryland from './static/images/maryland.png'
 import './App.css';
 import MasonryImageList from './components/imageList';
 
@@ -12,8 +13,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h5 className="title">Curtis Bowser</h5><br />
-        <h5>Maryland Photography</h5>
+        <h5 className="title">Curtis Bowser</h5>
+        <h5>MD Photographer</h5>
+        <img src={maryland}></img><br/>
+        <a className="purchase-link" href="https://www.redbubble.com/people/CBowserPhotos/shop">Purchase Prints</a>
+        
       </header>
         <MasonryImageList />
     </div>
