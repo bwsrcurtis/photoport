@@ -14,7 +14,7 @@ function App() {
       <header className="App-header">
         <h5 className="title">Curtis Bowser</h5>
         <h5>MD Photographer</h5>
-        <img src={maryland}></img><br/>
+        <img src={maryland} alt="maryland outline drawing"></img><br/>
         <a className="purchase-link" href="https://www.redbubble.com/people/CBowserPhotos/shop">Purchase Prints</a>
         
       </header>
