@@ -25,26 +25,31 @@ export default function MasonryImageList() {
 const itemData = [
   {
     imgdirect: 'https://i.imgur.com/hTyw5Nb.jpg',
+    redbubblelink: 'https://www.redbubble.com/shop/ap/128551229',
     title: 'Albertson Road Trail Sunset',
     author: 'Curtis Bowser',
   },
   {
     imgdirect: 'https://i.imgur.com/J2hSZa5.jpg',
+    redbubblelink: 'https://www.redbubble.com/shop/ap/128552248',
     title: 'Patapsco Pareidolia',
     author: 'Curtis Bowser',
   },
   {
     imgdirect: 'https://i.imgur.com/ICFGyOn.jpg',
+    redbubblelink: 'https://www.redbubble.com/shop/ap/128552048',
     title: 'Patapsco State Park',
     author: 'Curtis Bowser',
   },
   {
     imgdirect: 'https://i.imgur.com/IHcZkiZ.jpg',
+    redbubblelink: 'https://www.redbubble.com/shop/ap/128551607',
     title: 'Clearwater Park',
     author: 'Curtis Bowser',
   },
   {
     imgdirect: 'https://i.imgur.com/TIsD8ml.jpg',
+    redbubblelink: 'https://www.redbubble.com/shop/ap/128551814',
     title: 'Lake Waterford',
     author: 'Curtis Bowser',
   },
