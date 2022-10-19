@@ -1,12 +1,16 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
+import { useTheme } from '@mui/material/styles';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import { useMediaQuery } from '@mui/material';
 
 export default function MasonryImageList() {
+  const theme = useTheme();
+  const matchDownMd = useMediaQuery(theme.breakpoints.down('sm'));
   return (
     <Box sx={{ width: 19/20, height: 'fit-content', overflowY: 'visible' }}>
-      <ImageList className="imagebox" variant="masonry" cols={2} gap={8}>
+      <ImageList className="imagebox" variant="masonry" cols={matchDownMd ? 1 : 2 } gap={8}>
         {itemData.map((item) => (
           <ImageListItem key={item.imgdirect}>
             <img className="img"
