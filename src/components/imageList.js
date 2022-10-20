@@ -7,7 +7,7 @@ import { useMediaQuery } from '@mui/material';
 
 export default function MasonryImageList() {
   const theme = useTheme();
-  const matchDownMd = useMediaQuery(theme.breakpoints.down('sm'));
+  const matchDownMd = useMediaQuery(theme.breakpoints.down('md'));
   return (
     <Box sx={{ width: 19/20, height: 'fit-content', overflowY: 'visible' }}>
       <ImageList className="imagebox" variant="masonry" cols={matchDownMd ? 1 : 2 } gap={8}>

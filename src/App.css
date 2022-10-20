@@ -42,6 +42,7 @@ h5 {
 
 .img:hover {
   opacity: .8;
+  transition: .4s ease;
 }
 
 .purchase-link {
