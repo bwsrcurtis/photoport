@@ -13,14 +13,14 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="header">
-        <h5 className="title">Curtis Bowser</h5>
-        <h5>MD Photographer</h5>
-        <img src={maryland} alt="maryland outline drawing"></img><br/>
+          <h5 className="title">Curtis Bowser</h5>
+          <h5>MD Photographer</h5>
+          <img src={maryland} alt="maryland outline drawing"></img><br />
         </div>
         <a className="purchase-link" href="https://www.redbubble.com/people/CBowserPhotos/shop">Purchase Prints</a>
-        
+
       </header>
-        <MasonryImageList />
+      <MasonryImageList />
     </div>
   );
 }

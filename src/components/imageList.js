@@ -9,8 +9,8 @@ export default function MasonryImageList() {
   const theme = useTheme();
   const matchDownMd = useMediaQuery(theme.breakpoints.down('md'));
   return (
-    <Box sx={{ width: 19/20, height: 'fit-content', overflowY: 'visible' }}>
-      <ImageList className="imagebox" variant="masonry" cols={matchDownMd ? 1 : 2 } gap={8}>
+    <Box sx={{ width: 19 / 20, height: 'fit-content', overflowY: 'visible' }}>
+      <ImageList className="imagebox" variant="masonry" cols={matchDownMd ? 1 : 2} gap={8}>
         {itemData.map((item) => (
           <ImageListItem key={item.imgdirect}>
             <img className="img"
@@ -85,7 +85,7 @@ const itemData = [
   },
   {
     imgdirect: 'https://i.imgur.com/3GP7w63.jpg',
-    redbubblelink:'https://www.redbubble.com/shop/ap/128570546',
+    redbubblelink: 'https://www.redbubble.com/shop/ap/128570546',
     title: 'Swallow Falls',
     author: 'Curtis Bowser',
     location: "Maryland",

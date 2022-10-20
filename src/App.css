@@ -1,54 +1,57 @@
 .App {
-  text-align: center;
-  display: flex;
-  font-size: calc(10px + 2vmin);
-  color: black;
+	text-align: center;
+	display: flex;
+	font-size: calc(10px + 2vmin);
+	color: black;
 }
 
 .App-header {
-  background: rgb(118,138,173);
-  background: linear-gradient(180deg, rgb(73, 85, 107) 0%, rgb(197, 197, 197) 100%);
-  display: inline;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  padding-top: .5rem;
-
+	background: rgb(118, 138, 173);
+	background: linear-gradient(
+		180deg,
+		rgb(73, 85, 107) 0%,
+		rgb(197, 197, 197) 100%
+	);
+	display: inline;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: rgb(236, 236, 236);
+	padding-top: 0.5rem;
 }
 
 h5 {
-  margin: .5rem 0;
-  font-size: 1.15rem;
-  /* top: 0; */
-  font-weight: 100;
+	margin: 0.5rem 0;
+	font-size: 1.15rem;
+	/* top: 0; */
+	font-weight: 100;
 }
 
 .title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 0;
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 0;
 }
 
 .header {
-  top: 1vh;
-  position: sticky;
+	top: 1vh;
+	position: sticky;
 }
 
 .imagebox {
-  margin: 8px 8px 0 8px;
+	margin: 8px 8px 0 8px;
 }
 
 .img:hover {
-  opacity: .8;
-  transition: .4s ease;
+	opacity: 0.9;
+  box-shadow: 6px 3px 3px rgb(73, 85, 107);
+	transition: 0.4s ease;
 }
 
 .purchase-link {
-  font-size: 1.25rem;
-  color: rgb(7, 7, 145);
-  position: sticky;
-  top: 95%;
-
+	font-size: 1.25rem;
+	color: rgb(8, 8, 194);
+	position: sticky;
+	top: 95%;
 }
