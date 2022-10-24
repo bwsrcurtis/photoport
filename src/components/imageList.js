@@ -17,7 +17,7 @@ export default function MasonryImageList() {
               src={`${item.imgdirect}?w=248&fit=crop&auto=format`}
               srcSet={`${item.imgdirect}direct?w=248&fit=crop&auto=format&dpr=2 2x`}
               alt={item.title + ' ' + item.location + ' ' + item.author}
-              loading="eager"
+              loading="lazy"
             />
           </ImageListItem>
         ))}
