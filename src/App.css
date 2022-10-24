@@ -43,10 +43,23 @@ h5 {
 	margin: 8px 8px 0 8px;
 }
 
+.imagebox:hover > li {
+	/* opacity: .7; */
+	filter: grayscale(100%) blur(3px);
+	transition: 0.2s ease-in-out;
+}
+
+.imagebox:hover li:hover {
+	/* opacity: 1; */
+	filter: grayscale(0) blur(0);
+	transition: 0.2s ease-in-out;
+}
+
 .img:hover {
-	opacity: 0.9;
-  box-shadow: 6px 3px 3px rgb(73, 85, 107);
-	transition: 0.4s ease;
+	/* opacity: 0.9; */
+	filter: grayscale(0) blur(0);
+  box-shadow: 3px 1.5px 1.5px rgb(73, 85, 107);
+	transition: 0.2s ease-in-out;
 }
 
 .purchase-link {
