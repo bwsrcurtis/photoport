@@ -5,7 +5,7 @@ import '@fontsource/roboto/700.css';
 import React from 'react';
 
 import './App.css';
-import maryland from './static/images/maryland.png'
+import maryland from './static/images/md.svg'
 import MasonryImageList from './components/imageList';
 
 function App() {
@@ -14,8 +14,9 @@ function App() {
       <header className="App-header">
         <div className="header">
           <h5 className="title">Curtis Bowser</h5>
+          <img src={maryland} alt="maryland outline drawing" className='maryland' height="auto"
+          width="140vh" ></img><br />
           <h5>MD Photography</h5>
-          <img src={maryland} alt="maryland outline drawing"></img><br />
         </div>
         <a className="purchase-link" href="https://www.redbubble.com/people/CBowserPhotos/shop">Purchase Prints</a>
 
