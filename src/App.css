@@ -89,3 +89,18 @@ h5 {
 	position: sticky;
 	top: 95%;
 }
+
+.categories {
+	padding-left: 0;
+	margin-top: .5rem;
+}
+.category {
+	font-size: 1.1rem;
+	list-style: none;
+	text-align: center;
+	cursor: pointer;
+}
+
+.categories-header {
+	margin-bottom: 0;
+}

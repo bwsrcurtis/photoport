@@ -16,6 +16,7 @@ const itemData = [
     title: 'Albertson Road Trail Sunset',
     author: 'Curtis Bowser',
     location: "Maryland",
+    category: 'park',
   },
   {
     imgdirect: 'https://i.imgur.com/9uSGeY2.jpg',
@@ -23,6 +24,7 @@ const itemData = [
     title: 'Patapsco State Park',
     author: 'Curtis Bowser',
     location: "Maryland",
+    category: 'park',
   },
   {
     imgdirect: 'https://i.imgur.com/aoJ1qOX.jpg',
@@ -30,6 +32,7 @@ const itemData = [
     title: 'Lake Waterford',
     author: 'Curtis Bowser',
     location: "Maryland",
+    category: 'park',
   },
   {
     imgdirect: 'https://i.imgur.com/24fdwir.jpg',
@@ -37,6 +40,7 @@ const itemData = [
     title: 'Clearwater Park',
     author: 'Curtis Bowser',
     location: "Maryland",
+    category: 'park',
   },
   {
     imgdirect: "https://i.imgur.com/TBFkokN.jpg",
@@ -44,6 +48,7 @@ const itemData = [
     title: 'Green House',
     author: 'Curtis Bowser',
     location: "Maryland",
+    category: 'park',
   },
   {
     imgdirect: 'https://i.imgur.com/OHfmDhF.jpg',
@@ -51,6 +56,7 @@ const itemData = [
     title: 'Patapsco Pareidolia',
     author: 'Curtis Bowser',
     location: "Maryland",
+    category: 'oddity',
   },
   {
     imgdirect: 'https://i.imgur.com/1xGuq0z.jpg',
@@ -58,6 +64,7 @@ const itemData = [
     title: 'Park at Sunset Sepia',
     author: 'Curtis Bowser',
     location: "Maryland",
+    category: 'park',
   },
   {
     imgdirect: 'https://i.imgur.com/kSPnSN7.jpg',
@@ -65,6 +72,7 @@ const itemData = [
     title: 'Streetlight',
     author: 'Curtis Bowser',
     location: "Maryland",
+    category: 'park',
   },
   {
     imgdirect: 'https://i.imgur.com/Ia108GB.jpg',
@@ -72,6 +80,7 @@ const itemData = [
     title: 'Swallow Falls',
     author: 'Curtis Bowser',
     location: "Maryland",
+    category: 'waterfall',
   },
 ];
 
@@ -85,8 +94,14 @@ function App() {
           <h5 className="title">Curtis Bowser</h5>
           <img src={maryland} alt="maryland outline drawing" className='maryland' height="auto"
           width="140vh" ></img><br />
-          <h5>MD Photography</h5>
+          <h5>MD Photography</h5><br />
         </div>
+          <h5 className="categories-header">Categories</h5>
+        <ul className="categories">
+          <li className="category">Parks</li>
+          <li className="category">Pareidolia</li>
+          <li className="category">Waterfall</li>
+        </ul>
         <a className="purchase-link" href="https://www.redbubble.com/people/CBowserPhotos/shop">Purchase Prints</a>
 
       </header>
