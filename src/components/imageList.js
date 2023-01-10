@@ -5,7 +5,14 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { useMediaQuery } from '@mui/material';
 
-export default function MasonryImageList() {
+export default function MasonryImageList( {itemData} ) {
+  function zoomFnc(e) {
+    if (e.target.classList.contains('active')) {
+      e.target.classList.remove('active')
+    } else {
+      e.target.classList.add('active')
+    }
+  }
   const theme = useTheme();
   const matchDownMd = useMediaQuery(theme.breakpoints.down('md'));
   return (
@@ -14,6 +21,7 @@ export default function MasonryImageList() {
         {itemData.map((item) => (
           <ImageListItem key={item.imgdirect}>
             <img className="img"
+              onClick={zoomFnc}
               src={`${item.imgdirect}?w=248&fit=crop&auto=format`}
               srcSet={`${item.imgdirect}direct?w=248&fit=crop&auto=format&dpr=2 2x`}
               alt={item.title + ' ' + item.location + ' ' + item.author}
@@ -26,68 +34,4 @@ export default function MasonryImageList() {
   );
 }
 
-const itemData = [
-  {
-    imgdirect: 'https://i.imgur.com/ZjLIZvW.jpg',
-    redbubblelink: 'https://www.redbubble.com/shop/ap/128551229',
-    title: 'Albertson Road Trail Sunset',
-    author: 'Curtis Bowser',
-    location: "Maryland",
-  },
-  {
-    imgdirect: 'https://i.imgur.com/9uSGeY2.jpg',
-    redbubblelink: 'https://www.redbubble.com/shop/ap/128552048',
-    title: 'Patapsco State Park',
-    author: 'Curtis Bowser',
-    location: "Maryland",
-  },
-  {
-    imgdirect: 'https://i.imgur.com/aoJ1qOX.jpg',
-    redbubblelink: 'https://www.redbubble.com/shop/ap/128551814',
-    title: 'Lake Waterford',
-    author: 'Curtis Bowser',
-    location: "Maryland",
-  },
-  {
-    imgdirect: 'https://i.imgur.com/24fdwir.jpg',
-    redbubblelink: 'https://www.redbubble.com/shop/ap/128551607',
-    title: 'Clearwater Park',
-    author: 'Curtis Bowser',
-    location: "Maryland",
-  },
-  {
-    imgdirect: "https://i.imgur.com/TBFkokN.jpg",
-    redbubblelink: 'https://www.redbubble.com/shop/ap/128570337',
-    title: 'Green House',
-    author: 'Curtis Bowser',
-    location: "Maryland",
-  },
-  {
-    imgdirect: 'https://i.imgur.com/OHfmDhF.jpg',
-    redbubblelink: 'https://www.redbubble.com/shop/ap/128552248',
-    title: 'Patapsco Pareidolia',
-    author: 'Curtis Bowser',
-    location: "Maryland",
-  },
-  {
-    imgdirect: 'https://i.imgur.com/1xGuq0z.jpg',
-    redbubblelink: 'https://www.redbubble.com/shop/ap/128570656',
-    title: 'Park at Sunset Sepia',
-    author: 'Curtis Bowser',
-    location: "Maryland",
-  },
-  {
-    imgdirect: 'https://i.imgur.com/kSPnSN7.jpg',
-    redbubblelink: 'https://www.redbubble.com/shop/ap/128570437',
-    title: 'Streetlight',
-    author: 'Curtis Bowser',
-    location: "Maryland",
-  },
-  {
-    imgdirect: 'https://i.imgur.com/Ia108GB.jpg',
-    redbubblelink: 'https://www.redbubble.com/shop/ap/128570546',
-    title: 'Swallow Falls',
-    author: 'Curtis Bowser',
-    location: "Maryland",
-  },
-];
+

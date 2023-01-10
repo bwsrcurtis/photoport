@@ -48,6 +48,7 @@ h5 {
 
 .imagebox {
 	margin: 8px 8px 0 8px;
+	z-index: 0
 }
 
 .imagebox:hover > li {
@@ -67,6 +68,19 @@ h5 {
 	filter: grayscale(0) blur(0);
   box-shadow: 3px 1.5px 1.5px rgb(73, 85, 107);
 	transition: 0.2s ease-in-out;
+}
+
+.img {
+	cursor: pointer;
+	transform: scale(1);
+	transition: 1s ease-in-out;
+	/* z-index: 0; */
+	z-index: 20;
+}
+
+.img.active {
+	transform: scale(2);
+	transition: 1s ease-in-out;
 }
 
 .purchase-link {

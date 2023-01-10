@@ -8,7 +8,76 @@ import './App.css';
 import maryland from './static/images/md.svg'
 import MasonryImageList from './components/imageList';
 
+
+const itemData = [
+  {
+    imgdirect: 'https://i.imgur.com/ZjLIZvW.jpg',
+    redbubblelink: 'https://www.redbubble.com/shop/ap/128551229',
+    title: 'Albertson Road Trail Sunset',
+    author: 'Curtis Bowser',
+    location: "Maryland",
+  },
+  {
+    imgdirect: 'https://i.imgur.com/9uSGeY2.jpg',
+    redbubblelink: 'https://www.redbubble.com/shop/ap/128552048',
+    title: 'Patapsco State Park',
+    author: 'Curtis Bowser',
+    location: "Maryland",
+  },
+  {
+    imgdirect: 'https://i.imgur.com/aoJ1qOX.jpg',
+    redbubblelink: 'https://www.redbubble.com/shop/ap/128551814',
+    title: 'Lake Waterford',
+    author: 'Curtis Bowser',
+    location: "Maryland",
+  },
+  {
+    imgdirect: 'https://i.imgur.com/24fdwir.jpg',
+    redbubblelink: 'https://www.redbubble.com/shop/ap/128551607',
+    title: 'Clearwater Park',
+    author: 'Curtis Bowser',
+    location: "Maryland",
+  },
+  {
+    imgdirect: "https://i.imgur.com/TBFkokN.jpg",
+    redbubblelink: 'https://www.redbubble.com/shop/ap/128570337',
+    title: 'Green House',
+    author: 'Curtis Bowser',
+    location: "Maryland",
+  },
+  {
+    imgdirect: 'https://i.imgur.com/OHfmDhF.jpg',
+    redbubblelink: 'https://www.redbubble.com/shop/ap/128552248',
+    title: 'Patapsco Pareidolia',
+    author: 'Curtis Bowser',
+    location: "Maryland",
+  },
+  {
+    imgdirect: 'https://i.imgur.com/1xGuq0z.jpg',
+    redbubblelink: 'https://www.redbubble.com/shop/ap/128570656',
+    title: 'Park at Sunset Sepia',
+    author: 'Curtis Bowser',
+    location: "Maryland",
+  },
+  {
+    imgdirect: 'https://i.imgur.com/kSPnSN7.jpg',
+    redbubblelink: 'https://www.redbubble.com/shop/ap/128570437',
+    title: 'Streetlight',
+    author: 'Curtis Bowser',
+    location: "Maryland",
+  },
+  {
+    imgdirect: 'https://i.imgur.com/Ia108GB.jpg',
+    redbubblelink: 'https://www.redbubble.com/shop/ap/128570546',
+    title: 'Swallow Falls',
+    author: 'Curtis Bowser',
+    location: "Maryland",
+  },
+];
+
 function App() {
+
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -21,7 +90,7 @@ function App() {
         <a className="purchase-link" href="https://www.redbubble.com/people/CBowserPhotos/shop">Purchase Prints</a>
 
       </header>
-      <MasonryImageList />
+      <MasonryImageList itemData={itemData}/>
     </div>
   );
 }
