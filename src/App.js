@@ -2,7 +2,7 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import React from 'react';
+import React, {useState} from 'react';
 
 import './App.css';
 import maryland from './static/images/md.svg'
@@ -56,7 +56,7 @@ const itemData = [
     title: 'Patapsco Pareidolia',
     author: 'Curtis Bowser',
     location: "Maryland",
-    category: 'oddity',
+    category: 'pareidolia',
   },
   {
     imgdirect: 'https://i.imgur.com/1xGuq0z.jpg',
@@ -84,9 +84,26 @@ const itemData = [
   },
 ];
 
-function App() {
 
+
+function App() {
   
+  const [photos, setPhotos] = useState(itemData)
+  
+  function filter(tag) {
+    let filteredPhotos = [...itemData]
+    filteredPhotos = filteredPhotos.filter(photo => photo.category === tag)
+    console.log(filteredPhotos)
+    setPhotos(filteredPhotos)
+  }
+
+  const selectPhoto = (e) => {
+    let title = (e.target.title)
+    let selectedPhoto = [...itemData]
+    selectedPhoto = selectedPhoto.filter(photo => photo.title === title)
+    setPhotos(selectedPhoto)
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -98,14 +115,15 @@ function App() {
         </div>
           <h5 className="categories-header">Categories</h5>
         <ul className="categories">
-          <li className="category">Parks</li>
-          <li className="category">Pareidolia</li>
-          <li className="category">Waterfall</li>
+          <li className="category" onClick={() => setPhotos(itemData)}>All</li>
+          <li className="category" onClick={() => filter('park')}>Parks</li>
+          <li className="category" onClick={() => filter('pareidolia')}>Pareidolia</li>
+          <li className="category" onClick={() => filter('waterfall')}>Waterfall</li>
         </ul>
         <a className="purchase-link" href="https://www.redbubble.com/people/CBowserPhotos/shop">Purchase Prints</a>
 
       </header>
-      <MasonryImageList itemData={itemData}/>
+      <MasonryImageList itemData={photos} selectPhoto={selectPhoto}/>
     </div>
   );
 }
