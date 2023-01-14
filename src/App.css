@@ -107,7 +107,7 @@ h5 {
 
 .focused-div {
 	min-width: 80vw;
-	height: 100vh;
+	max-height: 100vh;
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
@@ -116,20 +116,18 @@ h5 {
 }
 
 .focused {
-	width: auto;
-	height: 100%;
-	margin: 1rem 0 1rem .5rem;
-
+	width: 80%;
+	max-height: 100vh;
+	/* margin: 1rem 0; */
 }
-
 
 .info-div {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	background-color:#050308;
-	width: auto;
-	height: 100%;
+	width: 20%;
+	height: 100vh;
 }
 
 .info-div > div > div {
@@ -138,4 +136,33 @@ h5 {
 
 .link-div {
 	margin-top: auto;
+}
+
+@media screen and (max-width: 1000px) {
+	.focused-div {
+		flex-direction: column;
+		height: auto;
+		min-width: none;
+	}
+	.focused {
+		max-height: 80vh;
+		width: 100%;
+		border:#e89173;
+		border-style: solid;
+	}
+	.info-div {
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		justify-content:flex-start;
+	}
+	.link-div {
+		margin-top:0;
+	}
+	.author-selected {
+		display: none;
+	}
+	.location-selected {
+		display: none;
+	}
 }
