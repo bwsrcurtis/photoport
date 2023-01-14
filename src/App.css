@@ -105,32 +105,34 @@ h5 {
 	margin-bottom: 0;
 }
 
-.focused {
-	width: auto;
-	height: 90vh;
-	margin: 1rem 0 1rem .5rem;
-
-}
-
 .focused-div {
-	width: 100vw;
-	height: 90vh;
-	margin: 8px 8px 0 8px;
+	min-width: 80vw;
+	height: 100vh;
 	display: flex;
+	justify-content: center;
 	flex-direction: row;
 	align-items: center;
 	color: #ba5e8c;
 }
 
+.focused {
+	width: auto;
+	height: 100%;
+	margin: 1rem 0 1rem .5rem;
+
+}
+
+
 .info-div {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	background-color:#050308;
 	width: auto;
-	height: 90vh;
+	height: 100%;
 }
 
-.info-div > div {
+.info-div > div > div {
 	margin: 1rem;
 }
 

@@ -37,11 +37,11 @@ export default function MasonryImageList( {itemData, selectPhoto} ) {
               alt={itemData[0].title + ' ' + itemData[0].location + ' ' + itemData[0].author}
               loading="lazy"
             />
-            <div className="info-div">
+            <div className="info-div"><div>
               <div>{itemData[0].title}</div>
               <div>{`by ${itemData[0].author} `}</div>
               <div>{`Taken in ${itemData[0].location}`}</div>
-              <br></br>
+              </div>
               <div className="link-div"><a href ={itemData[0].redbubblelink}>Purchase Print</a></div>
             </div>
             </div>
