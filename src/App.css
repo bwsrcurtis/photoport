@@ -9,6 +9,7 @@
 .App-header {
 	background: #050308;
 	display: inline;
+	width: 90vw;
 	align-items: center;
 	text-align: center;
 	justify-content: center;
@@ -34,7 +35,7 @@ h5 {
 }
 
 .title {
-	font-family: 'Amatic SC', cursive;
+	font-family: "Amatic SC", cursive;
 	font-size: 2.5rem;
 	font-weight: bold;
 	margin-bottom: 2rem;
@@ -42,7 +43,6 @@ h5 {
 
 .maryland {
 	position: sticky;
-
 }
 
 .header {
@@ -51,23 +51,29 @@ h5 {
 }
 
 li > button {
-	cursor:pointer;
-	margin: .25rem 0;
+	cursor: pointer;
+	margin: 0.25rem 0;
 	color: #ffead6;
 	background-color: #e89173;
-	font-family: 'roboto';
+	font-family: "roboto";
 	font-size: 1.25rem;
 	font-style: bold;
-	border-radius: 25%;
+	border-radius: 30%;
 	border-style: none;
 }
 
 li > button:hover {
 	background-color: #ba5e8c;
 }
+
+/* .MuiBox-root {
+	width: calc(90vw - 6px)
+} */
+
 .imagebox {
-	margin: 8px 8px 0 8px;
-	z-index: 0
+	margin: 3px;
+	width: calc(90vw - 6px);
+	gap: 6px 6px;
 }
 
 .imagebox:hover > li {
@@ -85,12 +91,16 @@ li > button:hover {
 .img:hover {
 	/* opacity: 0.9; */
 	filter: grayscale(0) blur(0);
-  box-shadow: 3px 1.5px 1.5px rgb(73, 85, 107);
+	box-shadow: 3px 1.5px 1.5px rgb(73, 85, 107);
 	transition: 0.1s ease-in-out;
 }
 
 .img {
 	cursor: pointer;
+	/* border-style: solid;
+	border-radius: 3px;
+	border-color: #e89173; */
+	margin: 3px;
 	transform: scale(1);
 	transition: 1s ease-in-out;
 	/* z-index: 0; */
@@ -142,7 +152,7 @@ li > button:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color:#050308;
+	background-color: #050308;
 	width: 20%;
 	height: 100vh;
 }
@@ -161,26 +171,58 @@ li > button:hover {
 		flex-direction: column;
 		height: auto;
 		min-width: none;
+		width: 80vw;
 	}
 	.focused {
 		max-height: 80vh;
-		width: 100%;
-		border:#e89173;
+		width: calc(100% - 6px);
+		border: #e89173;
+		border-width: 3px;
 		border-style: solid;
 	}
 	.info-div {
 		flex-direction: column;
 		width: 100%;
 		align-items: center;
-		justify-content:flex-start;
+		justify-content: flex-start;
 	}
 	.link-div {
-		margin-top:0;
+		margin-top: 0;
 	}
 	.author-selected {
 		display: none;
 	}
 	.location-selected {
 		display: none;
+	}
+	.App-header {
+		width: 20vw;
+	}
+	.header > .title {
+		font-size: 1.25rem;
+	}
+	.header > h5 {
+		font-size: 0.75rem;
+	}
+	li > button {
+		font-size: 0.75rem;
+		margin: 0px 1px;
+	}
+	.categories-header {
+		font-size: 0.75rem;
+	}
+	.maryland {
+		width: 100%;
+		height: auto;
+		position: sticky;
+		text-align: left;
+	}
+	.purchase-link {
+		font-size: 1rem;
+		margin-bottom: 1rem;
+	}
+	.imagebox {
+		width: calc(80vw - 16px);
+		padding: 3px;
 	}
 }
