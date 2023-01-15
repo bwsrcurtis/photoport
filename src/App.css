@@ -50,6 +50,21 @@ h5 {
 	position: sticky;
 }
 
+li > button {
+	cursor:pointer;
+	margin: .25rem 0;
+	color: #ffead6;
+	background-color: #e89173;
+	font-family: 'roboto';
+	font-size: 1.25rem;
+	font-style: bold;
+	border-radius: 25%;
+	border-style: none;
+}
+
+li > button:hover {
+	background-color: #ba5e8c;
+}
 .imagebox {
 	margin: 8px 8px 0 8px;
 	z-index: 0
@@ -57,21 +72,21 @@ h5 {
 
 .imagebox:hover > li {
 	/* opacity: .7; */
-	filter: grayscale(100%) blur(3px);
-	transition: 0.2s ease-in-out;
+	filter: grayscale(35%) blur(2px);
+	transition: 0.1s ease-in-out;
 }
 
 .imagebox:hover li:hover {
 	/* opacity: 1; */
 	filter: grayscale(0) blur(0);
-	transition: 0.2s ease-in-out;
+	transition: 0.1s ease-in-out;
 }
 
 .img:hover {
 	/* opacity: 0.9; */
 	filter: grayscale(0) blur(0);
   box-shadow: 3px 1.5px 1.5px rgb(73, 85, 107);
-	transition: 0.2s ease-in-out;
+	transition: 0.1s ease-in-out;
 }
 
 .img {
@@ -91,7 +106,7 @@ h5 {
 
 .categories {
 	padding-left: 0;
-	margin-top: .5rem;
+	margin: 1rem 0;
 	color: #ba5e8c;
 }
 .category {
@@ -103,6 +118,7 @@ h5 {
 
 .categories-header {
 	margin-bottom: 0;
+	font-size: 1.5rem;
 }
 
 .focused-div {
@@ -118,6 +134,7 @@ h5 {
 .focused {
 	width: 80%;
 	max-height: 100vh;
+	cursor: auto;
 	/* margin: 1rem 0; */
 }
 
@@ -136,6 +153,7 @@ h5 {
 
 .link-div {
 	margin-top: auto;
+	padding-bottom: 1rem;
 }
 
 @media screen and (max-width: 1000px) {

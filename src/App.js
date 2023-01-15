@@ -115,10 +115,10 @@ function App() {
         </div>
           <h5 className="categories-header">Categories</h5>
         <ul className="categories">
-          <li className="category" onClick={() => setPhotos(itemData)}>All</li>
-          <li className="category" onClick={() => filter('park')}>Parks</li>
-          <li className="category" onClick={() => filter('pareidolia')}>Pareidolia</li>
-          <li className="category" onClick={() => filter('waterfall')}>Waterfall</li>
+          <li className="category" onClick={() => setPhotos(itemData)}><button>All</button></li>
+          <li className="category" onClick={() => filter('park')}><button>Parks</button></li>
+          <li className="category" onClick={() => filter('pareidolia')}><button>Pareidolia</button></li>
+          <li className="category" onClick={() => filter('waterfall')}><button>Waterfall</button></li>
         </ul>
         <a className="purchase-link" href="https://www.redbubble.com/people/CBowserPhotos/shop">Purchase Prints</a>
 
