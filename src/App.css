@@ -2,19 +2,20 @@
 	text-align: center;
 	display: flex;
 	font-size: calc(10px + 2vmin);
-	color: #050308;
-	background-color: #e89173;
+	color: #3C3633;
+	background-color: #E0CCBE;
 }
 
 .App-header {
-	background: #050308;
+	background: #E0CCBE;
 	display: inline;
-	width: 90vw;
+	width: 10%;
+	max-width: 10%;
 	align-items: center;
 	text-align: center;
 	justify-content: center;
 	font-size: calc(10px + 2vmin);
-	color: rgb(236, 236, 236);
+	color: #747264;
 	padding-top: 0rem;
 	height: 100vh;
 	position: sticky;
@@ -23,13 +24,13 @@
 }
 
 a {
-	color: #ffead6;
+	color: #3C3633;
 }
 
 h5 {
 	margin: 0.5rem 0;
 	font-size: 1.15rem;
-	color: #ba5e8c;
+	color: #3C3633;
 	/* top: 0; */
 	font-weight: 100;
 }
@@ -53,8 +54,8 @@ h5 {
 li > button {
 	cursor: pointer;
 	margin: 0.25rem 0;
-	color: #ffead6;
-	background-color: #e89173;
+	color: #3C3633;
+	background-color: #EEEDEB;
 	font-family: "roboto";
 	font-size: 1.25rem;
 	font-style: bold;
@@ -63,7 +64,7 @@ li > button {
 }
 
 li > button:hover {
-	background-color: #ba5e8c;
+	background-color: #747264;
 }
 
 /* .MuiBox-root {
@@ -91,7 +92,7 @@ li > button:hover {
 .img:hover {
 	/* opacity: 0.9; */
 	filter: grayscale(0) blur(0);
-	box-shadow: 3px 1.5px 1.5px rgb(73, 85, 107);
+	/* box-shadow: 3px 1.5px 1.5px rgb(73, 85, 107); */
 	transition: 0.1s ease-in-out;
 }
 
@@ -109,7 +110,7 @@ li > button:hover {
 
 .purchase-link {
 	font-size: 1.25rem;
-	color: #ffead6;
+	color: #3C3633;
 	position: sticky;
 	top: 95%;
 }
@@ -117,7 +118,7 @@ li > button:hover {
 .categories {
 	padding-left: 0;
 	margin: 1rem 0;
-	color: #ba5e8c;
+	color: #E0CCBE;
 }
 .category {
 	font-size: 1.1rem;
@@ -138,11 +139,10 @@ li > button:hover {
 	justify-content: center;
 	flex-direction: row;
 	align-items: center;
-	color: #ba5e8c;
+	color: #EEEDEB;
 }
 
 .focused {
-	width: 80%;
 	max-height: 100vh;
 	cursor: auto;
 	/* margin: 1rem 0; */
@@ -152,8 +152,8 @@ li > button:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: #050308;
-	width: 20%;
+	background-color: #3C3633;
+	width: 10%;
 	height: 100vh;
 }
 
@@ -176,7 +176,7 @@ li > button:hover {
 	.focused {
 		max-height: 80vh;
 		width: calc(100% - 6px);
-		border: #e89173;
+		border: #EEEDEB;
 		border-width: 3px;
 		border-style: solid;
 	}
